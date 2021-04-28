@@ -341,7 +341,7 @@ a {
 
    .globe .cloud{
        left:-150px;
-       animation:cloud-move 100s infinite;
+       animation:cloud-move 90s infinite;
    }
    /* Animation here */
 
@@ -436,6 +436,6 @@ a {
             left:-150px;
         }
         100%{
-            left:300px;
+            left:250px;
         }
     }
