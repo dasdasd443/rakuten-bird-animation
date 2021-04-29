@@ -80,7 +80,10 @@ a {
  background-clip: padding-box;
  background-color: #11e7d7;
  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.3);
+ top:0px;
+    animation: body-movement 2s ease-in-out infinite;
 }
+
 .globe .bird .body:before, .globe .bird .body:after {
  position: absolute;
  content: "";
@@ -199,7 +202,7 @@ a {
    .globe .bird .body .eye.left:after {
     left: -60px;
     top: -45px;
-    animation: blink 3s infinite;
+    animation: blink 2s infinite;
    }
    .globe .bird .body .eye.right {
     right: 15px;
@@ -386,10 +389,16 @@ a {
    /* ANIMATIONS Here */
    @keyframes blink {
         0%{
+            top:0px;
+        }
+        1%{
             top:-45px;
         }
-        50%{
+        2%{
             top:0px;
+        }
+        3%{
+            top:-45px;
         }
         100%{
             top:-45px;
@@ -437,5 +446,17 @@ a {
         }
         100%{
             left:250px;
+        }
+    }
+
+    @keyframes body-movement{
+        0%{
+            top:0px;
+        }
+        50%{
+            top:10px;
+        }
+        100%{
+            top:0px;
         }
     }
